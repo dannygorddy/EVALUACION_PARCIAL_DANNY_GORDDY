@@ -1,7 +1,7 @@
 :root {
   --color-primario: #153243;
   --color-secundario: #284b63;
-  --color-acento: #f4a261;
+  --color-acento: #000000;
   --color-fondo: #fefefe;
   --color-texto: #333;
   --max-width: 1100px;
@@ -124,6 +124,15 @@ nav ul li a:hover {
 .plato {
   flex: 1 1 250px;
   text-align: center;
+  background-color: #cf9c3d;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plato:hover {
+  transform: translateY(-20px);
 }
 
 .plato img {
@@ -141,13 +150,63 @@ nav ul li a:hover {
 .lugar {
   flex: 1 1 200px;
   text-align: center;
+  background-color: #83c8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease;
+}
+
+.lugar:hover {
+  transform: translateY(-20px);
+}
+
+.lugar p {
+  font-weight: bold;
 }
 
 .lugar img {
   width: 100%;
   border-radius: 6px;
 }
+.lugares {
+  background-color: #e0f4ff; /* azul claro */
+  padding: 2rem 0;
+}
+.gastronomia {
+  background-color: #fdf3d6; /* beige cálido o amarillo pastel */
+  padding: 2rem 0;
+}
+.contacto {
+  background-color: #e7f6f2; /* fondo general suave */
+  padding: 2rem 0;
+}
 
+.contacto .container {
+  background-color: rgb(255, 206, 132);
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 6cap 10
+  px rgba(0, 0, 0, 0.05);
+}
+
+.costos {
+  background-color: #f0f0f0; /* gris claro */
+  padding: 2rem 0;
+}
+
+.costos .container {
+  background-color: white;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
 
 .costos table {
   width: 100%;
@@ -201,4 +260,14 @@ footer {
 footer a {
   color: var(--color-acento);
   text-decoration: none;
+}
+@supports (display: grid) {
+  .container {
+    border-left: 4px solid var(--color-acento);
+  }
+}
+@supports (display: grid) {
+  .plato:nth-child(odd) {
+    border: 2px dashed var(--color-acento);
+  }
 }
