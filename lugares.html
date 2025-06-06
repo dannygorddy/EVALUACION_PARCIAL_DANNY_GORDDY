@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lugares - Explora Perú</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="Logo de Explora Perú">
+        <h1 class="logo-title">Explora Perú</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="lugares.html">Lugares</a></li>
+          <li><a href="gastronomia.html">Gastronomía</a></li>
+          <li><a href="index.html#tabla">Costos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Lugares Turísticos de Perú</h2>
+    <p>Conoce algunos de los destinos más impresionantes que ofrece nuestro país.</p>
+
+    <!-- Figure + figcaption -->
+    <figure>
+      <img src="images/colca.jpg" alt="Cañón del Colca" style="width:100%; border-radius:8px;">
+      <figcaption>Cañón del Colca - Uno de los cañones más profundos del mundo.</figcaption>
+    </figure>
+
+    <!-- Picture adaptativo -->
+    <h3>Paracas</h3>
+    <picture>
+      <source media="(min-width: 800px)" srcset="images/paracas-large.jpg">
+      <source media="(min-width: 400px)" srcset="images/paracas-medium.jpg">
+      <img src="images/paracas-small.jpg" alt="Reserva de Paracas" style="width:100%; border-radius:8px;">
+    </picture>
+
+    <!-- Imagen interactiva map -->
+    <h3>Mapa Interactivo - Lugares del Perú</h3>
+    <img src="images/mapa_peru.jpg" usemap="#mapaPeru" alt="Mapa interactivo de Perú" style="width:100%;">
+
+    <map name="mapaPeru">
+      <area shape="rect" coords="100,200,200,300" href="https://es.wikipedia.org/wiki/Cusco" target="_blank" alt="Cusco">
+      <area shape="circle" coords="400,150,50" href="https://es.wikipedia.org/wiki/Arequipa" target="_blank" alt="Arequipa">
+    </map>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Explora Perú. Todos los derechos reservados.</p>
+      <p><a href="https://www.peru.travel" target="_blank">Visita Perú Travel</a></p>
+    </div>
+  </footer>
+</body>
+</html>
