@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora Perú - Descubre los lugares, sabores y cultura del Perú. Vive la experiencia completa con nuestra guía de turismo y gastronomía peruana.">
   <title>Explora Perú</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -10,9 +11,24 @@
   <header>
   <div class="container header-flex">
     <div class="logo-area">
-      <img src="imagenes/logo.png" alt="Logo de Explora Perú">
-      <h1 class="logo-title">Explora Perú</h1>
-    </div>
+  <img src="imagenes/logo.png" alt="Logo de Explora Perú">
+  
+  <!-- AQUÍ PEGAS EL SVG -->
+  
+  <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#03a9f4" stroke="#0277bd" stroke-width="2">
+      <rect x="28" y="8" width="8" height="40" rx="2" ry="2"/>
+      <polygon points="32,16 4,28 4,36 32,32"/>
+      <polygon points="32,16 60,28 60,36 32,32"/>
+      <polygon points="32,8 36,4 36,12 32,8"/>
+    </g>
+  </svg>
+  
+  <h1 class="logo-title">Explora Perú</h1>
+</div>
+
+
+
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -27,42 +43,49 @@
 
 
   <section id="inicio" class="hero">
-    <div class="container">
-      <div class="hero-text">
-        <h2>Descubre Perú como nunca antes</h2>
-        <p>Explora lugares mágicos, deléitate con la gastronomía y vive la cultura peruana en cada rincón.</p>
-        <a href="#lugares" class="btn">Ver más</a>
-      </div>
-      <div class="hero-image">
-        <img src="imagenes/hero_peru.jpg" alt="Vista de Machu Picchu">
-      </div>
+  <div class="container">
+    <div class="hero-text">
+      <h2>Descubre Perú como nunca antes</h2>
+      <p class="texto-descripciontitulo">Perú es más que un destino: es una experiencia para todos tus sentidos. Explora, saborea y siente el corazón de este país único.</p>
+      <a href="#lugares" class="btn">Ver más</a>
     </div>
-  </section>
+    <div class="hero-image">
+      <picture>
+        <source srcset="imagenes/hero_peru-large.jpg" media="(min-width: 1024px)">
+        <source srcset="imagenes/hero_peru-medium.jpg" media="(min-width: 600px)">
+        <img src="imagenes/hero_peru-small.jpg" alt="Vista de Machu Picchu" style="width: 100%; border-radius: 8px;">
+      </picture>
+    </div>
+  </div>
+</section>
+
+  <!-- Onda separadora entre Inicio y Lugares -->
+<div class="onda-separadora">
+  <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,64L40,80C80,96,160,128,240,133.3C320,139,400,117,480,117.3C560,117,640,139,720,133.3C800,128,880,96,960,96C1040,96,1120,128,1200,138.7C1280,149,1360,139,1400,133.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z" fill="#e0f4ff"></path>
+  </svg>
+</div>
 
   <section id="lugares" class="lugares">
   <div class="container">
     <h2>Lugares Imperdibles</h2>
-    <p>Recorre los principales atractivos turísticos del Perú.</p>
+    <p class="descripcioninicio">Perú es un país de paisajes sorprendentes y riqueza cultural inigualable. Desde las imponentes ruinas de Machu Picchu, cuna del antiguo Imperio Inca, hasta el lago navegable más alto del mundo, el Titicaca, cada rincón guarda historias milenarias y tradiciones vivas. Las misteriosas Líneas de Nazca, la vibrante Amazonía, las ciudades coloniales y los desiertos mágicos te invitan a explorar. Ya sea caminando entre andenes ancestrales, navegando por ríos selváticos o contemplando la arquitectura colonial, descubrirás que cada lugar en Perú es una experiencia única e inolvidable. ¡Ven y déjate sorprender por sus maravillas!</p>
     <div class="lugares-grid">
       <div class="lugar">
         <img src="imagenes/machu.jpg" alt="Machu Picchu">
-        <h3>Machu Picchu</h3>
-        <p>Antigua ciudadela inca ubicada en las alturas del Cusco, Patrimonio de la Humanidad y una de las siete maravillas del mundo moderno.</p>
+        <h3 class="subtitulo-seccion" >Machu Picchu</h3>
       </div>
       <div class="lugar">
         <img src="imagenes/arequipa.jpg" alt="Arequipa">
-        <h3>Arequipa</h3>
-        <p>"Conocida como la 'Ciudad Blanca', destaca por su arquitectura colonial y el majestuoso volcán Misti que la custodia."</p>
+        <h3 class="subtitulo-seccion">Arequipa</h3>
       </div>
       <div class="lugar">
         <img src="imagenes/amazonas.jpg" alt="Amazonas">
-        <h3>Amazonía</h3>
-        <p>"Una experiencia única en la selva peruana, hogar de una biodiversidad impresionante y culturas ancestrales."</p>
+        <h3 class="subtitulo-seccion">Amazonía</h3>
       </div>
       <div class="lugar">
         <img src="imagenes/huacachina.jpg" alt="Huacachina">
-        <h3>Huacachina</h3>
-        <p>"Un oasis en el desierto de Ica, ideal para deportes de aventura como el sandboard y paseos en buggies."</p>
+        <h3 class="subtitulo-seccion">Huacachina</h3>
       </div>
     </div>
   </div>
@@ -72,16 +95,7 @@
   <section id="gastronomia" class="gastronomia">
     <div class="container">
       <h2>Gastronomía Peruana</h2>
-      <p>Prueba los sabores únicos que hacen del Perú un destino culinario de clase mundial.</p>
-      <ul>
-        <li><strong>Ceviche:</strong> Plato emblemático a base de pescado crudo marinado en jugo de limón y ají.</li>
-        <li><strong>Lomo Saltado:</strong> Salteado de carne, cebolla y tomate con influencia china-peruana.</li>
-        <li><strong>Ají de Gallina:</strong> Guiso cremoso con pollo desmenuzado y ají amarillo.</li>
-        <li><strong>Pachamanca:</strong> Preparación ancestral de carnes y tubérculos cocinados bajo tierra con piedras calientes.</li>
-        <li><strong>Rocoto Relleno:</strong> Ají relleno de carne y especias, típico de Arequipa.</li>
-        <li><strong>Tacu Tacu:</strong> Mezcla de arroz y frejoles dorados, a veces acompañado con bistec o mariscos.</li>
-      </ul>
-
+      <p class="descripcioninicio">La gastronomía peruana es reconocida como una de las más ricas y diversas del mundo. Su sabor auténtico es el resultado de siglos de historia, mezcla de culturas ancestrales e influencias internacionales. Desde los frescos ceviches de la costa, pasando por los guisos contundentes de la sierra, hasta los exóticos sabores de la selva amazónica, cada plato refleja la identidad de su región. Perú es un verdadero paraíso culinario, con ingredientes autóctonos como la papa, el maíz, la quinua y ajíes únicos. Descubre aquí los sabores, aromas y tradiciones que hacen de la cocina peruana un orgullo nacional.</p>
       <div class="platos">
         <div class="plato">
           <img src="imagenes/ceviche.jpg" alt="Ceviche">
@@ -100,52 +114,106 @@
   </section>
 
   <section id="tabla" class="costos">
-    <div class="container">
-      <h2>Costos Aproximados</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Destino</th>
-            <th>Transporte</th>
-            <th>Hospedaje</th>
-            <th>Total Estimado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cusco</td>
-            <td>$150</td>
-            <td>$200</td>
-            <td>$350</td>
-          </tr>
-          <tr>
-            <td>Arequipa</td>
-            <td>$100</td>
-            <td>$150</td>
-            <td>$250</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Costos Aproximados</h2>
+    <p class="descripcioninicio">Estos son costos aproximados en soles peruanos (S/.) para disfrutar de los principales destinos turísticos del Perú. Los valores pueden variar según la temporada y el tipo de servicio elegido.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Destino</th>
+          <th>Transporte</th>
+          <th>Hospedaje</th>
+          <th>Alimentación</th>
+          <th>Actividades</th>
+          <th>Total Estimado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Machu Picchu</td>
+          <td>S/ 280</td>
+          <td>S/ 320</td>
+          <td>S/ 150</td>
+          <td>S/ 120</td>
+          <td>S/ 870</td>
+        </tr>
+        <tr>
+          <td>Arequipa</td>
+          <td>S/ 150</td>
+          <td>S/ 200</td>
+          <td>S/ 120</td>
+          <td>S/ 100</td>
+          <td>S/ 570</td>
+        </tr>
+        <tr>
+          <td>Lago Titicaca</td>
+          <td>S/ 220</td>
+          <td>S/ 280</td>
+          <td>S/ 130</td>
+          <td>S/ 110</td>
+          <td>S/ 740</td>
+        </tr>
+        <tr>
+          <td>Amazonía Peruana</td>
+          <td>S/ 350</td>
+          <td>S/ 300</td>
+          <td>S/ 150</td>
+          <td>S/ 150</td>
+          <td>S/ 950</td>
+        </tr>
+        <tr>
+          <td>Líneas de Nazca</td>
+          <td>S/ 180</td>
+          <td>S/ 220</td>
+          <td>S/ 100</td>
+          <td>S/ 90</td>
+          <td>S/ 590</td>
+        </tr>
+        <tr>
+          <td>Huacachina</td>
+          <td>S/ 120</td>
+          <td>S/ 180</td>
+          <td>S/ 100</td>
+          <td>S/ 80</td>
+          <td>S/ 480</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
   <section id="contacto" class="contacto">
     <div class="container">
-      <h2>Contáctanos</h2>
+      <h2>¿Quieres visitar el Perú? Contáctanos</h2>
       <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Danny Gorddy Huaman Chavez " required>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" placeholder=" +51 987654321" required>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" name="correo" placeholder="danny_huaman@hotmail.com" required>
 
-        <button type="submit">Enviar</button>
-      </form>
+  <label for="ciudad">Ciudad de origen:</label>
+  <input type="text" id="ciudad" name="ciudad" placeholder="Cusco" required>
+
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+
     </div>
   </section>
+  <!-- Onda decorativa antes del Footer -->
+<div class="onda-footer">
+  <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,64L40,69.3C80,75,160,85,240,90.7C320,96,400,96,480,80C560,64,640,32,720,26.7C800,21,880,43,960,53.3C1040,64,1120,64,1200,69.3C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z" fill="#153243"></path>
+  </svg>
+</div>
 
   <footer>
     <div class="container">

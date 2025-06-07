@@ -3,17 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explora los lugares turísticos más increíbles de Perú: Machu Picchu, Amazonía, Lago Titicaca, Arequipa y más. ¡Vive la aventura!">
   <title>Lugares - Explora Perú</title>
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body class="pagina-lugares">
   <header>
     <div class="container header-flex">
       <div class="logo-area">
-        <img src="images/logo.png" alt="Logo de Explora Perú">
-        <h1 class="logo-title">Explora Perú</h1>
-      </div>
+  <img src="imagenes/logo.png" alt="Logo de Explora Perú">
+  
+  <!-- AQUÍ PEGAS EL SVG -->
+  
+  <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#03a9f4" stroke="#0277bd" stroke-width="2">
+      <rect x="28" y="8" width="8" height="40" rx="2" ry="2"/>
+      <polygon points="32,16 4,28 4,36 32,32"/>
+      <polygon points="32,16 60,28 60,36 32,32"/>
+      <polygon points="32,8 36,4 36,12 32,8"/>
+    </g>
+  </svg>
+  
+  <h1 class="logo-title">Explora Perú</h1>
+</div>
+
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -27,106 +41,152 @@
   </header>
 
   <main class="container">
-    <h2>Lugares Turísticos de Perú</h2>
-    <p>Perú es un país lleno de historia, naturaleza y cultura. A continuación te mostramos algunos de los destinos más fascinantes que puedes visitar.</p>
+    <h2> Lugares Turísticos de Perú</h2>
+    <p class="texto-descripciontitulo">En cada rincón de Perú te espera una experiencia inolvidable. Paisajes que te roban el aliento, culturas que te abrazan y sabores que despiertan tus sentidos. Los lugares imperdibles de este país son mucho más que destinos: son puertas a emociones profundas y memorias imborrables. Ven y déjate cautivar por la magia de Perú. El viaje de tu vida te espera.</p>
 
     <!-- Lugar 1: Machu Picchu -->
     <section class="lugar-detalle">
-      <h3>Machu Picchu</h3>
-      <p>Antigua ciudadela inca ubicada en las montañas del Cusco. Es considerada una de las siete maravillas del mundo moderno.</p>
+      <h3 class="subtitulo-seccion">Machu Picchu</h3>
+      <div class="caja-descripcion">
+<p class="texto-descripcion"> Machu Picchu es una impresionante ciudadela inca situada en lo alto de los Andes peruanos. Declarada Patrimonio de la Humanidad por la UNESCO, es uno de los destinos turísticos más visitados del mundo. Rodeada de paisajes montañosos y místicos, su arquitectura de piedra y su historia ancestral fascinan a los visitantes. Explorar Machu Picchu es una experiencia única que conecta con el legado de los incas.</p>
       <figure>
-        <img src="imagenes/machu.jpg" alt="Machu Picchu" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Machu Picchu - Patrimonio de la Humanidad.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/machu-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/machu-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/machu-small.jpg" alt="Machu Picchu" class="img-principal">
+  </picture>
+  <figcaption>Machu Picchu - Patrimonio de la Humanidad.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
         <img src="imagenes/machu-secundaria1.jpg" alt="una llama en Machu Picchu">
         <img src="imagenes/machu-secundaria2.jpg" alt="Detalle de las construcciones incas">
       </div>
+       </div>
     </section>
 
     <!-- Lugar 2: Arequipa -->
     <section class="lugar-detalle">
-      <h3>Arequipa</h3>
-      <p>Conocida como la Ciudad Blanca, Arequipa destaca por su arquitectura colonial y su cercanía con el majestuoso volcán Misti.</p>
+      <h3 class="subtitulo-seccion" >Arequipa</h3>
+      <div class="caja-descripcion">
+      <p class="texto-descripcion">Arequipa, la “Ciudad Blanca”, destaca por su arquitectura colonial construida en sillar volcánico. Ubicada al pie del majestuoso volcán Misti, su centro histórico es Patrimonio de la Humanidad. Arequipa combina historia, cultura y naturaleza, con atractivos como el Monasterio de Santa Catalina y el Cañón del Colca. Su gastronomía y tradiciones hacen de esta ciudad un destino imperdible en el sur del Perú</p>
       <figure>
-        <img src="imagenes/arequipa.jpg" alt="Arequipa" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Arequipa - Ciudad Blanca y volcán Misti.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/arequipa-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/arequipa-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/arequipa-small.jpg" alt="Arequipa" class="img-principal">
+  </picture>
+  <figcaption>Arequipa - Ciudad Blanca y volcán Misti.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
         <img src="imagenes/arequipa-secundaria1.jpg" alt="Centro histórico de Arequipa">
         <img src="imagenes/arequipa-secundaria2.jpg" alt="Volcán Misti">
+      </div>
       </div>
     </section>
 
     <!-- Lugar 3: Lago Titicaca -->
     <section class="lugar-detalle">
-      <h3>Lago Titicaca</h3>
-      <p>El lago navegable más alto del mundo, hogar de comunidades quechuas y aimaras, y de las famosas islas flotantes de los Uros.</p>
+      <h3 class="subtitulo-seccion">Lago Titicaca</h3>
+      <div class="caja-descripcion">
+      <p class="texto-descripcion">El Lago Titicaca, el lago navegable más alto del mundo, es un lugar lleno de cultura y belleza natural. Compartido por Perú y Bolivia, alberga comunidades quechuas y aimaras que preservan sus tradiciones. Sus islas flotantes de totora, como las de los Uros, son un atractivo único. El paisaje altiplánico y el legado ancestral convierten al Titicaca en un destino fascinante.
+</p>
       <figure>
-        <img src="imagenes/titicaca-principal.jpg" alt="Lago Titicaca" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Lago Titicaca - Cultura viva en el altiplano peruano.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/titicaca-principal-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/titicaca-principal-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/titicaca-principal-small.jpg" alt="Lago Titicaca" class="img-principal">
+  </picture>
+  <figcaption>Lago Titicaca - Cultura viva en el altiplano peruano.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
         <img src="imagenes/titicaca-secundaria1.jpg" alt="Islas flotantes de los Uros">
         <img src="imagenes/titicaca-secundaria2.jpg" alt="Panorámica del lago Titicaca">
+      </div>
       </div>
     </section>
 
     <!-- Lugar 4: Amazonía Peruana -->
     <section class="lugar-detalle">
-      <h3>Amazonía Peruana</h3>
-      <p>Una de las regiones más biodiversas del mundo, la selva peruana alberga miles de especies de flora y fauna únicas.</p>
+      <h3 class="subtitulo-seccion">Amazonía Peruana</h3>
+      <div class="caja-descripcion">
+      <p class="texto-descripcion">La Amazonía peruana es una de las regiones más biodiversas del planeta. Sus selvas exuberantes albergan miles de especies de flora y fauna únicas. Navegar por el río Amazonas, explorar reservas naturales y conocer comunidades indígenas permite descubrir este ecosistema vital. Iquitos, principal puerta de entrada, ofrece aventuras ecológicas inolvidables en la selva tropical más extensa y fascinante del mundo.</p>
       <figure>
-        <img src="imagenes/amazonas.jpg" alt="Amazonía Peruana" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Amazonía peruana - Biodiversidad y cultura ancestral.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/amazonas-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/amazonas-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/amazonas-small.jpg" alt="Amazonía Peruana" class="img-principal">
+  </picture>
+  <figcaption>Amazonía peruana - Biodiversidad y cultura ancestral.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
         <img src="imagenes/amazonas-secundaria1.jpg" alt="Fauna de la selva peruana">
         <img src="imagenes/amazonas-secundaria2.jpg" alt="Río Amazonas">
       </div>
+    </div>
     </section>
 
     <!-- Lugar 5: Líneas de Nazca -->
     <section class="lugar-detalle">
-      <h3>Líneas de Nazca</h3>
-      <p>Geoglifos milenarios trazados en el desierto de Nazca, cuyas figuras gigantes sólo son visibles desde el aire.</p>
+      <h3 class="subtitulo-seccion">Líneas de Nazca</h3>
+      <div class="caja-descripcion">
+      <p class="texto-descripcion">Las Líneas de Nazca son misteriosos geoglifos trazados en el desierto de Nazca hace más de mil años. Estas enormes figuras de animales, plantas y formas geométricas solo pueden apreciarse completamente desde el aire. Su propósito exacto sigue siendo un enigma, atrayendo a arqueólogos y turistas. Visitar Nazca permite explorar uno de los legados más enigmáticos de las antiguas culturas peruanas.</p>
       <figure>
-        <img src="images/nazca-principal.jpg" alt="Líneas de Nazca" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Líneas de Nazca - Misteriosos dibujos en el desierto.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/nazca-principal-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/nazca-principal-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/nazca-principal-small.jpg" alt="Líneas de Nazca" class="img-principal">
+  </picture>
+  <figcaption>Líneas de Nazca - Misteriosos dibujos en el desierto.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
-        <img src="images/nazca-secundaria1.jpg" alt="Figura del colibrí">
-        <img src="images/nazca-secundaria2.jpg" alt="Figura del mono">
+        <img src="imagenes/nazca-secundaria1.jpg" alt="Figura del colibrí">
+        <img src="imagenes/nazca-secundaria2.jpg" alt="Figura del mono">
+      </div>
       </div>
     </section>
 
     <!-- Lugar 6: Huacachina -->
     <section class="lugar-detalle">
-      <h3>Huacachina</h3>
-      <p>Un oasis en el desierto de Ica, ideal para deportes de aventura como el sandboard y paseos en buggies por las dunas.</p>
+      <h3 class="subtitulo-seccion">Huacachina</h3>
+      <div class="caja-descripcion">
+      <p class="texto-descripcion">Huacachina es un oasis natural en pleno desierto de Ica, famoso por su laguna rodeada de palmeras y altas dunas de arena. Es un destino ideal para practicar sandboarding y paseos en buggy. El encanto del paisaje y las actividades de aventura atraen a visitantes de todo el mundo. Huacachina combina naturaleza y emoción, ofreciendo una experiencia única en el corazón del desierto peruano.</p>
       <figure>
-        <img src="imagenes/huacachina.jpg" alt="Huacachina" style="width:100%; border-radius:8px; transition: transform 0.5s;">
-        <figcaption>Huacachina - Aventura y relax en el desierto peruano.</figcaption>
-      </figure>
+  <picture>
+    <source srcset="imagenes/huacachina-large.jpg" media="(min-width: 1024px)">
+    <source srcset="imagenes/huacachina-medium.jpg" media="(min-width: 600px)">
+    <img src="imagenes/huacachina-small.jpg" alt="Huacachina" class="img-principal">
+  </picture>
+  <figcaption>Huacachina - Aventura y relax en el desierto peruano.</figcaption>
+</figure>
+
       <div class="galeria-secundaria">
         <img src="imagenes/huacachina-secundaria1.jpg" alt="Vista del oasis de Huacachina">
         <img src="imagenes/huacachina-secundaria2.jpg" alt="Sandboard en las dunas">
       </div>
+      </div>
     </section>
 
-    <!-- Mapa interactivo -->
     <section class="mapa-interactivo">
-      <h3>Mapa Interactivo - Lugares del Perú</h3>
-      <img src="images/mapa_peru.jpg" usemap="#mapaPeru" alt="Mapa interactivo de Perú" style="width:100%;">
+  <h3>Mapa Interactivo - Lugares del Perú</h3>
+<img src="imagenes/mapa_peru.jpg" usemap="#image-map" alt="Mapa interactivo de Perú" class="img-mapa">
 
-      <map name="mapaPeru">
-        <area shape="rect" coords="100,200,200,300" href="https://es.wikipedia.org/wiki/Cusco" target="_blank" alt="Cusco">
-        <area shape="circle" coords="400,150,50" href="https://es.wikipedia.org/wiki/Arequipa" target="_blank" alt="Arequipa">
-        <area shape="rect" coords="300,350,400,450" href="https://es.wikipedia.org/wiki/Lago_Titicaca" target="_blank" alt="Lago Titicaca">
-      </map>
-    </section>
+
+<map name="image-map">
+    <area target="_blank" alt="Arequipa" title="Arequipa" href="https://es.wikipedia.org/wiki/Arequipa" coords="471,707,459,684,410,668,389,687,345,705,386,725,415,739,446,759,451,730" shape="poly">
+    <area target="_blank" alt="lago titicaca" title="lago titicaca" href="https://es.wikipedia.org/wiki/Lago_Titicaca" coords="564,727,541,746,526,756,520,736,507,711,494,711,488,657,511,608,553,610,558,641,539,664,544,694" shape="poly">
+    <area target="_blank" alt="Amazonia Peruana" title="Amazonia Peruana" href="https://es.wikipedia.org/wiki/Iquitos" coords="197,162,193,239,255,271,290,289,291,318,270,332,275,355,309,354,317,328,344,332,363,304,378,278,388,238,479,195,506,143,406,138,366,114,318,63" shape="poly">
+    <area target="_blank" alt="Nazca" title="Nazca" href="https://es.wikipedia.org/wiki/Líneas_de_Nazca" coords="271,594,317,669,300,681,274,654,255,624,259,601" shape="poly">
+    <area target="_blank" alt="Huacachina" title="Huacachina" href="https://es.wikipedia.org/wiki/Huacachina" coords="251,593,280,571,273,551,265,543,228,552,234,566" shape="poly">
+    <area target="_blank" alt="Machu Picchu" title="Machu Picchu" href="https://es.wikipedia.org/wiki/Machu_Picchu" coords="375,516,414,523,415,547,439,577,494,594,471,646,459,665,443,662,421,650,437,619,410,599,392,593,364,570,364,558,374,543" shape="poly">
+</map>
+<p class="leyenda-mapa">Haz clic en las regiones del mapa para conocer más sobre los lugares turísticos de Perú.</p>
+</section>
   </main>
-
   <footer>
     <div class="container">
       <p>&copy; 2025 Explora Perú. Todos los derechos reservados.</p>

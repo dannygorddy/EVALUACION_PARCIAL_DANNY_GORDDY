@@ -3,15 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Descubre la gastronomía peruana: platos típicos del norte, centro, sur y Amazonía. Sabores únicos y tradición culinaria.">
   <title>Gastronomía - Explora Perú</title>
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body class="pagina-gastronomia">
   <header>
     <div class="container header-flex">
       <div class="logo-area">
-        <img src="images/logo.png" alt="Logo de Explora Perú">
+        <img src="imagenes/logo.png" alt="Logo de Explora Perú">
+        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Centro de la flor -->
+  <circle cx="32" cy="32" r="6" fill="#FF69B4"/>
+
+  <!-- Pétalos -->
+  <g fill="#FFD700">
+    <!-- Pétalos en cruz -->
+    <ellipse cx="32" cy="16" rx="8" ry="12"/>
+    <ellipse cx="32" cy="48" rx="8" ry="12"/>
+    <ellipse cx="16" cy="32" rx="12" ry="8"/>
+    <ellipse cx="48" cy="32" rx="12" ry="8"/>
+    
+    <!-- Pétalos en diagonal -->
+    <ellipse cx="20" cy="20" rx="10" ry="6"/>
+    <ellipse cx="44" cy="20" rx="10" ry="6"/>
+    <ellipse cx="20" cy="44" rx="10" ry="6"/>
+    <ellipse cx="44" cy="44" rx="10" ry="6"/>
+  </g>
+</svg>
         <h1 class="logo-title">Explora Perú</h1>
       </div>
       <nav>
@@ -28,28 +48,112 @@
 
   <main class="container">
     <h2>Gastronomía Peruana</h2>
-    <p>Descubre la riqueza culinaria del Perú, una de las más reconocidas a nivel mundial.</p>
+    <p class="texto-descripciontitulo">
+      La gastronomía peruana refleja la diversidad cultural y geográfica del país. Desde los sabores intensos del norte, pasando por la tradición del centro, la cocina ancestral del sur, hasta la exótica comida amazónica, cada región ofrece platos únicos. Acompáñanos en este recorrido culinario por el Perú.
+    </p>
 
-    <!-- Figure + figcaption -->
-    <figure>
-      <img src="images/pachamanca.jpg" alt="Pachamanca" style="width:100%; border-radius:8px;">
-      <figcaption>Pachamanca - Cocina ancestral bajo tierra.</figcaption>
-    </figure>
+    <!-- Sección Comida del Norte -->
+    <section class="gastronomia">
+      <h3 class="subtitulo-seccion">Comida del Norte</h3>
+      <p class="texto-descripcion">
+La cocina del norte peruano es famosa por sus sabores intensos y generosos. Destacan los guisos y platos a base de pescados y mariscos, combinados con especias locales y productos de la tierra. La influencia de la tradición mochica y chimú aporta un carácter único a cada preparación.
+</p>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/seco_cabrito.jpg" alt="Seco de Cabrito">
+          <h3>Seco de Cabrito</h3>
+          <p class="descripcion-plato">Guiso de cabrito tierno cocinado a fuego lento con chicha de jora, culantro y especias. Acompañado de arroz y yuca.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/arroz_pato.jpg" alt="Arroz con Pato">
+          <h3>Arroz con Pato</h3>
+          <p class="descripcion-plato">Arroz verde cocido con culantro, cerveza negra y piezas de pato. Un plato aromático típico del norte.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/sudado_pescado.jpg" alt="Sudado de Pescado">
+          <h3>Sudado de Pescado</h3>
+          <p class="descripcion-plato">Caldo de pescado fresco cocinado con tomates, cebolla, ajíes y hierbas aromáticas. Ligero y lleno de sabor.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- SVG decorativo (puedes crear un SVG o usar uno libre) -->
-    <h3>Icono SVG decorativo:</h3>
-    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-      Lo mejor de nuestra cocina
-    </svg>
+    <!-- Sección Comida del Centro -->
+    <section class="gastronomia">
+      <h3 class="subtitulo-seccion">Comida del Centro</h3>
+      <p class="texto-descripcion">
+La gastronomía del centro del Perú combina la frescura de los productos del mar con la creatividad de la cocina criolla. En esta región nacen muchos de los platos más emblemáticos del país, caracterizados por su equilibrio de sabores, aromas y texturas. Es una fusión de tradición e innovación.
+</p>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/ceviche.jpg" alt="Ceviche">
+          <h3>Ceviche</h3>
+          <p class="descripcion-plato">Plato emblemático a base de pescado crudo marinado en jugo de limón, cebolla morada, ají limo y cilantro.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/lomo.jpg" alt="Lomo Saltado">
+          <h3>Lomo Saltado</h3>
+          <p class="descripcion-plato">Salteado de carne de res, cebolla, tomate y papas fritas, con influencia de la cocina china-peruana.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/anticuchos.jpg" alt="Anticuchos">
+          <h3>Anticuchos</h3>
+          <p class="descripcion-plato">Brochetas de corazón de res marinadas con ají panca, ajo y especias. Tradicionalmente asadas a la parrilla.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Picture adaptativo -->
-    <h3>Ceviche</h3>
-    <picture>
-      <source media="(min-width: 800px)" srcset="images/ceviche-large.jpg">
-      <source media="(min-width: 400px)" srcset="images/ceviche-medium.jpg">
-      <img src="images/ceviche-small.jpg" alt="Ceviche peruano" style="width:100%; border-radius:8px;">
-    </picture>
+    <!-- Sección Comida del Sur -->
+    <section class="gastronomia">
+      <h3 class="subtitulo-seccion">Comida del Sur</h3>
+      <p class="texto-descripcion">
+La cocina del sur peruano es un verdadero homenaje a la tradición andina. Sus platos reflejan la riqueza de los productos de la sierra y la costa sur, con recetas ancestrales que han perdurado en el tiempo. Los sabores son intensos y reconfortantes, cargados de historia y cultura.
+</p>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/rocoto.jpg" alt="Rocoto Relleno">
+          <h3>Rocoto Relleno</h3>
+          <p class="descripcion-plato">Ají rocoto relleno de carne sazonada, cubierto con queso y gratinado. Especialidad de Arequipa.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/chupe_camarones.jpg" alt="Chupe de Camarones">
+          <h3>Chupe de Camarones</h3>
+          <p class="descripcion-plato">Sopa espesa a base de camarones, leche, papa, maíz, huevo y ají. Plato típico del sur peruano.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/ocopa.jpg" alt="Ocopa Arequipeña">
+          <h3>Ocopa Arequipeña</h3>
+          <p class="descripcion-plato">Salsa cremosa de ají amarillo, maní y queso, servida sobre papas sancochadas. Entrada tradicional de Arequipa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Comida Amazónica -->
+    <section class="gastronomia">
+      <h3 class="subtitulo-seccion">Comida Amazónica</h3>
+      <p class="texto-descripcion">
+La gastronomía amazónica peruana es una experiencia exótica y vibrante. Utiliza ingredientes autóctonos de la selva como el plátano, el paiche, la yuca y una variedad de hierbas aromáticas. Los platos amazónicos sorprenden por su originalidad y sus sabores auténticos, conectando con la esencia de la selva.
+</p>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/juane.jpg" alt="Juane">
+          <h3>Juane</h3>
+          <p class="descripcion-plato">Arroz sazonado con cúrcuma y envuelto en hojas de bijao, relleno con pollo, huevo y aceitunas. Plato festivo de la selva.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/tacacho.jpg" alt="Tacacho con Cecina">
+          <h3>Tacacho con Cecina</h3>
+          <p class="descripcion-plato">Bolitas de plátano verde frito y machacado, acompañadas de cecina (carne de cerdo ahumada) y chorizo amazónico.</p>
+        </div>
+        <div class="plato">
+          <img src="imagenes/patarashca.jpg" alt="Patarashca">
+          <h3>Patarashca</h3>
+          <p class="descripcion-plato">Pescado sazonado con hierbas aromáticas y envuelto en hojas de bijao, asado a la brasa. Sabor típico de la Amazonía.</p>
+        </div>
+      </div>
+    </section>
+    <p class="texto-descripcionend" style="margin-top: 2rem;">
+  La gastronomía peruana sigue evolucionando día a día, conservando su esencia y sorprendiendo al mundo con su creatividad y autenticidad. Cada región del Perú ofrece una experiencia culinaria única que invita a descubrir nuevos sabores, compartir tradiciones y celebrar la diversidad cultural de nuestro país. ¡Explora, disfruta y déjate conquistar por los sabores del Perú!
+</p>
 
   </main>
 

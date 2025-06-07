@@ -5,7 +5,7 @@
   --color-fondo: #fefefe;
   --color-texto: #333;
   --max-width: 1100px;
-  --espaciado: 2rem;
+  --espaciado: 0.5rem;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--espaciado);
+
 }
 
 header {
@@ -170,15 +171,15 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 .lugares {
-  background-color: #e0f4ff; /* azul claro */
+  background-color: #e0f4ff; 
   padding: 2rem 0;
 }
 .gastronomia {
-  background-color: #fdf3d6; /* beige cálido o amarillo pastel */
+  background-color: #fdf3d6; 
   padding: 2rem 0;
 }
 .contacto {
-  background-color: #e7f6f2; /* fondo general suave */
+  background-color: #e7f6f2; 
   padding: 2rem 0;
 }
 
@@ -189,12 +190,11 @@ nav ul li a:hover {
   padding: 1.5rem;
   max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0 6cap 10
-  px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6cap 10px rgba(0, 0, 0, 0.05);
 }
 
 .costos {
-  background-color: #f0f0f0; /* gris claro */
+  background-color: #f0f0f0; 
   padding: 2rem 0;
 }
 
@@ -244,26 +244,35 @@ nav ul li a:hover {
   margin-top: 1rem;
 }
 
-input, textarea {
+.contacto form input,
+.contacto form textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
+  max-width: 800px;   /* nuevo: máximo 500px de ancho */
+  box-sizing: border-box;
 }
 
-button {
+.contacto form button {
   background-color: var(--color-acento);
+  font-size: 1.5rem;
   color: white;
   border: none;
   padding: 0.75rem;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
+  max-width: 200px;   /* botón también centrado y más pequeño */
+  margin: 0 auto;
+
 }
 
-button:hover {
+.contacto form button:hover {
   background-color: #e76f51;
 }
+
 
 footer {
   background-color: var(--color-primario);
@@ -297,9 +306,256 @@ footer a {
 .galeria-secundaria img {
   width: 48%;
   border-radius: 8px;
-  transition: transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); 
 }
 
 .galeria-secundaria img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.img-principal {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-principal:hover {
   transform: scale(1.05);
+  box-shadow: 0 12px 24px rgb(0, 0, 0); 
+}
+.mapa-interactivo {
+  background-color: #f8f9fa;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-top: 4px solid #153243; 
+  border-bottom: 4px solid #153243;
+  margin-bottom: 2rem;
+}
+
+.mapa-interactivo h3 {
+  font-size: 2.2rem;
+  color: #6c6c6c;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.mapa-interactivo h3:hover {
+  color: #000000; 
+}
+.img-mapa {
+  width: 596px; 
+  height: auto; 
+  border-radius: 8px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+.img-mapa:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgb(95, 151, 255);
+}
+
+area {
+  cursor: pointer;
+}
+
+.leyenda-mapa {
+  font-size: 2rem;
+  color: #444;
+  margin-top: 1.5rem;
+  font-weight: 500; 
+}
+
+.subtitulo-seccion {
+  font-size: 2rem; 
+  color: #044571; 
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  border-top: 3px solid #284b63;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem; 
+}
+
+.texto-descripcion {
+  font-size: 1.4rem;
+  color: #444; 
+  line-height: 1.6; 
+  margin-bottom: 1.5rem;
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.caja-descripcion {
+  background-color: #fce9b2; 
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+}
+.pagina-inicio {
+  background-color: #f0f4f8; 
+}
+
+.pagina-lugares {
+  background-color: #fffeda8c; 
+}
+
+.pagina-gastronomia {
+  background-color: #ffddee;
+}
+figure figcaption {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold; 
+}
+h2 {
+  font-size: 3rem;
+  color: #19630f;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.texto-descripcionsub {
+  font-size: 1.6rem;
+  color: #000000; 
+  line-height: 1.6; 
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+
+  .logo-area img {
+    height: 40px;
+  }
+  .logo-title {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.75rem 1.2rem;
+  }
+  .lugares .lugares-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lugar {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .texto-descripcion,
+  .texto-descripcionsub {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .caja-descripcion {
+    width: 90%;
+    padding: 2rem;
+  }
+  .img-mapa {
+    width: 90%;
+  }
+  .galeria-secundaria {
+    flex-direction: column;
+  }
+  .galeria-secundaria img {
+    width: 100%;
+  }
+  .costos table {
+    font-size: 1.4rem;
+  }
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+.texto-descripcionend {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #696969; 
+  line-height: 1.6; 
+  margin-bottom: 1.5rem;
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  background-color: #fff7e6;
+  border: 2px solid #e0c090;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.texto-descripcionend:hover {
+  transform: scale(1.03) rotate(5deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.descripcioninicio {
+  font-size: 1.4rem;
+  color: #000000; 
+  line-height: 1.6; 
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.texto-descripciontitulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #780000; 
+  line-height: 1.6; 
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.onda-separadora svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+.onda-footer svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  margin-bottom: -1px; /* para que no deje espacio abajo */
 }
