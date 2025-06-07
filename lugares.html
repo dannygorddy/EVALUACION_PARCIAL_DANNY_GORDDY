@@ -28,31 +28,103 @@
 
   <main class="container">
     <h2>Lugares Turísticos de Perú</h2>
-    <p>Conoce algunos de los destinos más impresionantes que ofrece nuestro país.</p>
+    <p>Perú es un país lleno de historia, naturaleza y cultura. A continuación te mostramos algunos de los destinos más fascinantes que puedes visitar.</p>
 
-    <!-- Figure + figcaption -->
-    <figure>
-      <img src="images/colca.jpg" alt="Cañón del Colca" style="width:100%; border-radius:8px;">
-      <figcaption>Cañón del Colca - Uno de los cañones más profundos del mundo.</figcaption>
-    </figure>
+    <!-- Lugar 1: Machu Picchu -->
+    <section class="lugar-detalle">
+      <h3>Machu Picchu</h3>
+      <p>Antigua ciudadela inca ubicada en las montañas del Cusco. Es considerada una de las siete maravillas del mundo moderno.</p>
+      <figure>
+        <img src="imagenes/machu.jpg" alt="Machu Picchu" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Machu Picchu - Patrimonio de la Humanidad.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="imagenes/machu-secundaria1.jpg" alt="una llama en Machu Picchu">
+        <img src="imagenes/machu-secundaria2.jpg" alt="Detalle de las construcciones incas">
+      </div>
+    </section>
 
-    <!-- Picture adaptativo -->
-    <h3>Paracas</h3>
-    <picture>
-      <source media="(min-width: 800px)" srcset="images/paracas-large.jpg">
-      <source media="(min-width: 400px)" srcset="images/paracas-medium.jpg">
-      <img src="images/paracas-small.jpg" alt="Reserva de Paracas" style="width:100%; border-radius:8px;">
-    </picture>
+    <!-- Lugar 2: Arequipa -->
+    <section class="lugar-detalle">
+      <h3>Arequipa</h3>
+      <p>Conocida como la Ciudad Blanca, Arequipa destaca por su arquitectura colonial y su cercanía con el majestuoso volcán Misti.</p>
+      <figure>
+        <img src="imagenes/arequipa.jpg" alt="Arequipa" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Arequipa - Ciudad Blanca y volcán Misti.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="imagenes/arequipa-secundaria1.jpg" alt="Centro histórico de Arequipa">
+        <img src="imagenes/arequipa-secundaria2.jpg" alt="Volcán Misti">
+      </div>
+    </section>
 
-    <!-- Imagen interactiva map -->
-    <h3>Mapa Interactivo - Lugares del Perú</h3>
-    <img src="images/mapa_peru.jpg" usemap="#mapaPeru" alt="Mapa interactivo de Perú" style="width:100%;">
+    <!-- Lugar 3: Lago Titicaca -->
+    <section class="lugar-detalle">
+      <h3>Lago Titicaca</h3>
+      <p>El lago navegable más alto del mundo, hogar de comunidades quechuas y aimaras, y de las famosas islas flotantes de los Uros.</p>
+      <figure>
+        <img src="imagenes/titicaca-principal.jpg" alt="Lago Titicaca" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Lago Titicaca - Cultura viva en el altiplano peruano.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="imagenes/titicaca-secundaria1.jpg" alt="Islas flotantes de los Uros">
+        <img src="imagenes/titicaca-secundaria2.jpg" alt="Panorámica del lago Titicaca">
+      </div>
+    </section>
 
-    <map name="mapaPeru">
-      <area shape="rect" coords="100,200,200,300" href="https://es.wikipedia.org/wiki/Cusco" target="_blank" alt="Cusco">
-      <area shape="circle" coords="400,150,50" href="https://es.wikipedia.org/wiki/Arequipa" target="_blank" alt="Arequipa">
-    </map>
+    <!-- Lugar 4: Amazonía Peruana -->
+    <section class="lugar-detalle">
+      <h3>Amazonía Peruana</h3>
+      <p>Una de las regiones más biodiversas del mundo, la selva peruana alberga miles de especies de flora y fauna únicas.</p>
+      <figure>
+        <img src="imagenes/amazonas.jpg" alt="Amazonía Peruana" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Amazonía peruana - Biodiversidad y cultura ancestral.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="imagenes/amazonas-secundaria1.jpg" alt="Fauna de la selva peruana">
+        <img src="imagenes/amazonas-secundaria2.jpg" alt="Río Amazonas">
+      </div>
+    </section>
 
+    <!-- Lugar 5: Líneas de Nazca -->
+    <section class="lugar-detalle">
+      <h3>Líneas de Nazca</h3>
+      <p>Geoglifos milenarios trazados en el desierto de Nazca, cuyas figuras gigantes sólo son visibles desde el aire.</p>
+      <figure>
+        <img src="images/nazca-principal.jpg" alt="Líneas de Nazca" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Líneas de Nazca - Misteriosos dibujos en el desierto.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="images/nazca-secundaria1.jpg" alt="Figura del colibrí">
+        <img src="images/nazca-secundaria2.jpg" alt="Figura del mono">
+      </div>
+    </section>
+
+    <!-- Lugar 6: Huacachina -->
+    <section class="lugar-detalle">
+      <h3>Huacachina</h3>
+      <p>Un oasis en el desierto de Ica, ideal para deportes de aventura como el sandboard y paseos en buggies por las dunas.</p>
+      <figure>
+        <img src="imagenes/huacachina.jpg" alt="Huacachina" style="width:100%; border-radius:8px; transition: transform 0.5s;">
+        <figcaption>Huacachina - Aventura y relax en el desierto peruano.</figcaption>
+      </figure>
+      <div class="galeria-secundaria">
+        <img src="imagenes/huacachina-secundaria1.jpg" alt="Vista del oasis de Huacachina">
+        <img src="imagenes/huacachina-secundaria2.jpg" alt="Sandboard en las dunas">
+      </div>
+    </section>
+
+    <!-- Mapa interactivo -->
+    <section class="mapa-interactivo">
+      <h3>Mapa Interactivo - Lugares del Perú</h3>
+      <img src="images/mapa_peru.jpg" usemap="#mapaPeru" alt="Mapa interactivo de Perú" style="width:100%;">
+
+      <map name="mapaPeru">
+        <area shape="rect" coords="100,200,200,300" href="https://es.wikipedia.org/wiki/Cusco" target="_blank" alt="Cusco">
+        <area shape="circle" coords="400,150,50" href="https://es.wikipedia.org/wiki/Arequipa" target="_blank" alt="Arequipa">
+        <area shape="rect" coords="300,350,400,450" href="https://es.wikipedia.org/wiki/Lago_Titicaca" target="_blank" alt="Lago Titicaca">
+      </map>
+    </section>
   </main>
 
   <footer>

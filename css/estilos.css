@@ -287,3 +287,19 @@ footer a {
     border: 2px dashed var(--color-acento);
   }
 }
+.galeria-secundaria {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.galeria-secundaria img {
+  width: 48%;
+  border-radius: 8px;
+  transition: transform 0.5s;
+}
+
+.galeria-secundaria img:hover {
+  transform: scale(1.05);
+}
