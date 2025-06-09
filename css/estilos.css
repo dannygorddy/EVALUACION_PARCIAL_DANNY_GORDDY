@@ -557,5 +557,5 @@ h2 {
   width: 100%;
   height: auto;
   line-height: 0;
-  margin-bottom: -1px; /* para que no deje espacio abajo */
+  margin-bottom: -1px;
 }
