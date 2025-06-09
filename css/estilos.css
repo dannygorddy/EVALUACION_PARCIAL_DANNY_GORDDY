@@ -250,7 +250,7 @@ nav ul li a:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
-  max-width: 800px;   /* nuevo: máximo 500px de ancho */
+  max-width: 800px; 
   box-sizing: border-box;
 }
 
@@ -264,7 +264,7 @@ nav ul li a:hover {
   font-weight: bold;
   cursor: pointer;
   width: 100%;
-  max-width: 200px;   /* botón también centrado y más pequeño */
+  max-width: 200px;   
   margin: 0 auto;
 
 }
