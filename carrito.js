@@ -46,8 +46,8 @@ function actualizarCarrito() {
     li.innerHTML = `
     <span>${datos.cantidad} x ${nombre} - S/. ${datos.subtotal.toFixed(2)}</span>
     <span style="display: inline-flex; gap: 5px; margin-left: 10px;">
-        <button style="font-size: 28px;" onclick="event.stopPropagation(); agregarAlCarrito('${nombre}', ${datos.precio})">➕</button>
-        <button style="font-size: 28px;" onclick="event.stopPropagation(); eliminarUno('${nombre}')">❌</button>
+        <button style="font-size: 16px;" onclick="event.stopPropagation(); agregarAlCarrito('${nombre}', ${datos.precio})">➕</button>
+        <button style="font-size: 16px;" onclick="event.stopPropagation(); eliminarUno('${nombre}')">❌</button>
     </span>
 `;
     lista.appendChild(li);
@@ -154,8 +154,31 @@ function eliminarUno(nombreProducto) {
   const index = carrito.findIndex(item => item.nombre === nombreProducto);
   if (index !== -1) {
     total -= carrito[index].precio;
-    carrito.splice(index, 1); // Elimina solo 1
-    guardarCarrito();
+    carrito.splice(index, 1); 
     actualizarCarrito();
   }
 }
+
+const preciosTours = new Map([
+  ['Tour Básico Machu Picchu', 80],
+  ['Tour con Comida Machu Picchu', 110],
+  ['Tour Full Día Machu Picchu', 160],
+  ['Tour Premium Machu Picchu', 220],
+]);
+
+preciosTours.forEach((precio, nombre) => {
+  console.log(`🔎 ${nombre}: S/. ${precio}`);
+});
+
+const regiones = new Set(['Arequipa', 'Puno', 'Amazonía', 'Nazca', 'Huacachina']);
+console.log('🌍 Regiones con tours disponibles:', Array.from(regiones).join(', '));
+
+console.log('📦 Contenido agrupado del carrito:');
+Object.entries(carrito.reduce((acc, item) => {
+  acc[item.nombre] = acc[item.nombre] || { cantidad: 0, total: 0 };
+  acc[item.nombre].cantidad++;
+  acc[item.nombre].total += item.precio;
+  return acc;
+}, {})).forEach(([nombre, datos]) => {
+  console.log(`🛍️ ${datos.cantidad} x ${nombre} = S/. ${datos.total}`);
+});

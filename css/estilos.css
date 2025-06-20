@@ -541,7 +541,7 @@ h2 {
 .texto-descripciontitulo {
   font-size: 2rem;
   font-weight: bold;
-  color: #780000; 
+  color: #3e3e3e; 
   line-height: 1.6; 
   margin-bottom: 1rem;
   text-align: center;
@@ -631,7 +631,7 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 10px 0;
-  max-height: 150px;
+  max-height: 300px;
   overflow-y: auto;
 }
 
@@ -677,9 +677,10 @@ h2 {
 
 /* Estado abierto - estilo normal */
 #carrito.abierto {
-  width: 260px;
+  width: 350px;
   border-radius: 10px;
   padding: 15px;
+  max-height: 500px; /* NUEVO: altura máxima mayor */
 }
 .carrito-header {
   display: flex;
@@ -741,4 +742,107 @@ h2 {
   align-items: center;
   margin-top: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+.lugar-detalle .producto {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.lugar-detalle .producto p {
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+  color: #222;
+}
+.paquetes-tour {
+  margin-top: 2rem;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.paquete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.nombre-tour {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b3b3b;
+  position: relative;
+  cursor: pointer;
+}
+
+.nombre-tour::after {
+  content: attr(data-desc);
+  position: absolute;
+  left: 0;
+  top: -170%;
+  background: #f9f9f9;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.nombre-tour:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.info-tour {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.icono-tour {
+  width: 28px;
+  height: 28px;
+}
+.precio-tour {
+  font-size: 1.2rem;
+  color: #2e7d32; /* Verde oscuro, evoca naturaleza */
+  font-weight: bold;
+  margin-right: 10px;
+  background-color: #eafae7;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.precio-boton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.texto-descripcion-principal {
+  text-align: center;
+  color: #555;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  font-weight: 500;
+}
+.titulo-principal-lugar {
+  text-align: center;
+  color: #2e7d2f;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto 1rem auto; /* centrado horizontal */
+  display: block; /* asegúrate que no esté como inline */
 }

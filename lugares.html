@@ -42,8 +42,11 @@
   </header>
 
   <main class="container">
-    <h2> Lugares Turísticos de Perú</h2>
-    <p class="texto-descripciontitulo">En cada rincón de Perú te espera una experiencia inolvidable. Paisajes que te roban el aliento, culturas que te abrazan y sabores que despiertan tus sentidos. Los lugares imperdibles de este país son mucho más que destinos: son puertas a emociones profundas y memorias imborrables. Ven y déjate cautivar por la magia de Perú. El viaje de tu vida te espera.</p>
+    <h2 class="titulo-principal-lugar">Lugares Turísticos de Perú</h2>
+<p class="texto-descripcion-principal">
+  Descubre los destinos más fascinantes del Perú con nuestros tours únicos y accesibles. Desde la mística Machu Picchu hasta la vibrante selva amazónica, cada lugar te conecta con cultura, aventura y sabor. Elige tu experiencia favorita, agrégala al carrito y prepárate para el viaje de tu vida. ¡Perú te espera con los brazos abiertos!
+</p>
+
 
     <!-- Lugar 1: Machu Picchu -->
     <section class="lugar-detalle">
@@ -63,6 +66,51 @@
         <img src="imagenes/machu-secundaria1.jpg" alt="una llama en Machu Picchu">
         <img src="imagenes/machu-secundaria2.jpg" alt="Detalle de las construcciones incas">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Incluye entrada a Machu Picchu y transporte.">Tour Básico</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 80</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour Básico Machu Picchu', 80)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Incluye entrada, transporte y almuerzo típico.">Tour con Comida</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 110</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour con Comida Machu Picchu', 110)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Incluye entrada, comida, guía profesional y tren turístico.">Tour Full Día</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 160</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour Full Día Machu Picchu', 160)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Tour VIP con guía privado, almuerzo gourmet, tren panorámico y traslado privado.">Tour Premium</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 220</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour Premium Machu Picchu', 220)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
        </div>
     </section>
 
@@ -84,6 +132,52 @@
         <img src="imagenes/arequipa-secundaria1.jpg" alt="Centro histórico de Arequipa">
         <img src="imagenes/arequipa-secundaria2.jpg" alt="Volcán Misti">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Catedral, Monasterio de Santa Catalina y miradores.">City Tour Arequipa Blanca</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 70</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('City Tour Arequipa Blanca', 70)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Explora las canteras de sillar y conoce la arquitectura de la ciudad.">Ruta del Sillar</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 90</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Ruta del Sillar Arequipa', 90)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Sabandía, Molino de Sabandía, Paucarpata y mirador de Yanahuara.">Tour campiña y miradores</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 100</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour campiña y miradores Arequipa', 100)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Degustación de rocoto relleno, ocopa y queso helado en picanterías locales.">Tour gastronómico y picantería</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 120</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour gastronómico Arequipa', 120)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
 
@@ -106,6 +200,52 @@
         <img src="imagenes/titicaca-secundaria1.jpg" alt="Islas flotantes de los Uros">
         <img src="imagenes/titicaca-secundaria2.jpg" alt="Panorámica del lago Titicaca">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Paseo en bote a islas de totora y convivencia breve con los pobladores.">Islas flotantes de los Uros</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 65</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Islas flotantes de los Uros', 65)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Caminata, cultura textil y almuerzo tradicional.">Tour a Isla Taquile</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 90</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour a Isla Taquile', 90)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Experiencia vivencial con familias locales. Incluye alimentación y hospedaje básico.">Tour comunitario en Amantaní</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 150</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour comunitario en Amantaní', 150)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Relajante paseo en bote con vista panorámica y guía local.">Navegación al atardecer</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 70</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Navegación al atardecer Lago Titicaca', 70)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
 
@@ -127,6 +267,52 @@
         <img src="imagenes/amazonas-secundaria1.jpg" alt="Fauna de la selva peruana">
         <img src="imagenes/amazonas-secundaria2.jpg" alt="Río Amazonas">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Observa insectos, aves nocturnas y sonidos de la selva viva.">Caminata nocturna en la selva</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 60</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Caminata nocturna en la selva', 60)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Navegación por el río Amazonas y observación de fauna.">Avistamiento de delfines rosados</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 95</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Avistamiento de delfines rosados', 95)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Aprende sobre medicina natural y cultura indígena.">Visita a comunidad indígena</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 100</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Visita a comunidad indígena', 100)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Caminata elevada entre árboles y avistamiento de aves.">Tour de canopy y puentes colgantes</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 85</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour de canopy y puentes colgantes', 85)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+
     </div>
     </section>
 
@@ -148,6 +334,51 @@
         <img src="imagenes/nazca-secundaria1.jpg" alt="Figura del colibrí">
         <img src="imagenes/nazca-secundaria2.jpg" alt="Figura del mono">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Avión ligero, duración de 35 minutos, incluye briefing previo.">Sobrevuelo clásico Líneas de Nazca</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 280</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Sobrevuelo clásico Líneas de Nazca', 280)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Observa figuras desde torres de observación accesibles.">Tour terrestre a miradores</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 50</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour terrestre a miradores', 50)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Conoce la historia y legado de la investigadora alemana.">Museo María Reiche</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 35</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Museo María Reiche', 35)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Visita a los Acueductos de Cantalloc + líneas desde miradores.">Tour combinado: acueductos y líneas</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 100</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour combinado: acueductos y líneas', 100)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 
@@ -169,6 +400,51 @@
         <img src="imagenes/huacachina-secundaria1.jpg" alt="Vista del oasis de Huacachina">
         <img src="imagenes/huacachina-secundaria2.jpg" alt="Sandboard en las dunas">
       </div>
+      <div class="paquetes-tour">
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Emoción y adrenalina en las dunas, ideal para fotos.">Paseo en buggy y sandboarding</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 60</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Paseo en buggy y sandboarding', 60)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Paseo relajante en bote a pedal o remos.">Tour en bote por la laguna</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 25</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour en bote por la laguna', 25)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Incluye snacks, bebidas y guía fotográfico.">Picnic en las dunas</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 50</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Picnic en las dunas', 50)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="paquete">
+    <div class="info-tour">
+      <img src="imagenes/icono-tour.jpg" alt="icono tour" class="icono-tour">
+      <span class="nombre-tour" data-desc="Degustación de pisco + paseo por la laguna.">Tour Huacachina + viñedo</span>
+    </div>
+    <div class="precio-boton">
+      <span class="precio-tour">S/ 70</span>
+      <button class="boton-agregar" onclick="agregarAlCarrito('Tour Huacachina + viñedo', 70)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 
