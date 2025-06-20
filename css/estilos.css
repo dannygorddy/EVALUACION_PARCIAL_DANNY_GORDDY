@@ -559,3 +559,186 @@ h2 {
   line-height: 0;
   margin-bottom: -1px;
 }
+
+/* Estilo para popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.popup-contenido {
+  font-weight: bold;
+  color: #000000;
+  background: rgb(223, 201, 255);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #ffffff50;
+}
+
+.popup-contenido button {
+  margin-top: 15px;
+  background-color: #2e8b57;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-contenido button:hover {
+  background-color: #246b45;
+}
+
+.oculto {
+  display: none;
+}
+#carrito {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 260px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.carrito-contenido {
+  display: none;
+  padding: 10px;
+  cursor: default;
+}
+
+#carrito.abierto .carrito-contenido {
+  display: block;
+}
+
+#carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#carrito button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #008d0e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#carrito button:hover {
+  background-color: #246b45;
+}
+/* Estado cerrado - estilo circular */
+#carrito.cerrado {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-color: #838383;
+  border-width: 3px;
+}
+
+
+#carrito.cerrado img {
+  width: 60px;
+}
+
+/* Oculta el texto y título cuando está cerrado */
+#carrito.cerrado h3,
+#carrito.cerrado .carrito-contenido {
+  display: none;
+}
+
+/* Estado abierto - estilo normal */
+#carrito.abierto {
+  width: 260px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.carrito-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+#carrito-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-flotante {
+  width: 50px;
+}
+
+.titulo-carrito {
+  font-size: 18px;
+  color: #037b0d;
+  font-weight: bold;
+  margin: 0;
+}
+.icono-carrito-header img {
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.icono-carrito-header img:hover {
+  transform: scale(1.5);
+  filter: brightness(1.3);
+  cursor: pointer;
+}
+.boton-agregar {
+  background-color: #00a90b;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+  background-color: #992bff;
+}
+.producto {
+  font-weight: bold;
+  background-color: #f9f9f9;  
+  border: 2px solid #ccc;      
+  border-radius: 10px;         
+  padding: 12px 16px;          
+  display: flex;             
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}

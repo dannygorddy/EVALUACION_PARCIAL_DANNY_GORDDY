@@ -35,6 +35,9 @@
           <li><a href="gastronomia.html">Gastronomía</a></li>
           <li><a href="index.html#tabla">Costos</a></li>
           <li><a href="index.html#contacto">Contacto</a></li>
+          <li class="icono-carrito-header">
+    <img src="imagenes/icono-carrito.png" alt="Carrito"  id="iconoCarritoMenu" width="35">
+  </li>
         </ul>
       </nav>
     </div>
@@ -57,17 +60,42 @@ La cocina del norte peruano es famosa por sus sabores intensos y generosos. Dest
           <img src="imagenes/seco_cabrito.jpg" alt="Seco de Cabrito">
           <h3>Seco de Cabrito</h3>
           <p class="descripcion-plato">Guiso de cabrito tierno cocinado a fuego lento con chicha de jora, culantro y especias. Acompañado de arroz y yuca.</p>
+          <div class="producto">
+            <p>S/. 10.00</p>
+            <button class="boton-agregar" onclick="agregarAlCarrito('seco de cabrito', 10)">
+            Agregar al carrito 
+            <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+            </button>
+          </div>
+
         </div>
         <div class="plato">
           <img src="imagenes/arroz_pato.jpg" alt="Arroz con Pato">
           <h3>Arroz con Pato</h3>
           <p class="descripcion-plato">Arroz verde cocido con culantro, cerveza negra y piezas de pato. Un plato aromático típico del norte.</p>
+          <div class="producto">
+          <p>S/. 12.00</p>
+          <button class="boton-agregar" onclick="agregarAlCarrito('Arroz con Pato', 12.0)">
+            Agregar al carrito 
+            <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+          </button>
+        </div>
+
         </div>
         <div class="plato">
           <img src="imagenes/sudado_pescado.jpg" alt="Sudado de Pescado">
           <h3>Sudado de Pescado</h3>
           <p class="descripcion-plato">Caldo de pescado fresco cocinado con tomates, cebolla, ajíes y hierbas aromáticas. Ligero y lleno de sabor.</p>
+          <div class="producto">
+          <p>S/. 11.00</p>
+          <button class="boton-agregar" onclick="agregarAlCarrito('Sudado de Pescado', 11.0)">
+            Agregar al carrito 
+            <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+          </button>
         </div>
+
+        </div>
+        
       </div>
     </section>
 
@@ -82,16 +110,39 @@ La gastronomía del centro del Perú combina la frescura de los productos del ma
           <img src="imagenes/ceviche.jpg" alt="Ceviche">
           <h3>Ceviche</h3>
           <p class="descripcion-plato">Plato emblemático a base de pescado crudo marinado en jugo de limón, cebolla morada, ají limo y cilantro.</p>
+          <div class="producto">
+        <p>S/. 15.00</p>
+        <button class="boton-agregar" onclick="agregarAlCarrito('Ceviche', 15.0)">
+          Agregar al carrito 
+          <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+        </button>
+      </div>
         </div>
         <div class="plato">
           <img src="imagenes/lomo.jpg" alt="Lomo Saltado">
           <h3>Lomo Saltado</h3>
           <p class="descripcion-plato">Salteado de carne de res, cebolla, tomate y papas fritas, con influencia de la cocina china-peruana.</p>
+
+          <div class="producto">
+            <p>S/. 13.00</p>
+            <button class="boton-agregar" onclick="agregarAlCarrito('Lomo Saltado', 13.0)">
+              Agregar al carrito 
+              <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+            </button>
+          </div>
+
         </div>
         <div class="plato">
           <img src="imagenes/anticuchos.jpg" alt="Anticuchos">
           <h3>Anticuchos</h3>
           <p class="descripcion-plato">Brochetas de corazón de res marinadas con ají panca, ajo y especias. Tradicionalmente asadas a la parrilla.</p>
+          <div class="producto">
+          <p>S/. 9.00</p>
+          <button class="boton-agregar" onclick="agregarAlCarrito('Anticuchos', 9.0)">
+            Agregar al carrito 
+            <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+          </button>
+        </div>
         </div>
       </div>
     </section>
@@ -107,16 +158,40 @@ La cocina del sur peruano es un verdadero homenaje a la tradición andina. Sus p
           <img src="imagenes/rocoto.jpg" alt="Rocoto Relleno">
           <h3>Rocoto Relleno</h3>
           <p class="descripcion-plato">Ají rocoto relleno de carne sazonada, cubierto con queso y gratinado. Especialidad de Arequipa.</p>
+          <div class="producto">
+  <p>S/. 10.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Rocoto Relleno', 10.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
+
         </div>
         <div class="plato">
           <img src="imagenes/chupe_camarones.jpg" alt="Chupe de Camarones">
           <h3>Chupe de Camarones</h3>
           <p class="descripcion-plato">Sopa espesa a base de camarones, leche, papa, maíz, huevo y ají. Plato típico del sur peruano.</p>
+<div class="producto">
+  <p>S/. 14.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Chupe de Camarones', 14.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
+
         </div>
         <div class="plato">
           <img src="imagenes/ocopa.jpg" alt="Ocopa Arequipeña">
           <h3>Ocopa Arequipeña</h3>
           <p class="descripcion-plato">Salsa cremosa de ají amarillo, maní y queso, servida sobre papas sancochadas. Entrada tradicional de Arequipa.</p>
+          <div class="producto">
+  <p>S/. 8.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Ocopa Arequipeña', 8.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
+
         </div>
       </div>
     </section>
@@ -132,16 +207,38 @@ La gastronomía amazónica peruana es una experiencia exótica y vibrante. Utili
           <img src="imagenes/juane.jpg" alt="Juane">
           <h3>Juane</h3>
           <p class="descripcion-plato">Arroz sazonado con cúrcuma y envuelto en hojas de bijao, relleno con pollo, huevo y aceitunas. Plato festivo de la selva.</p>
+          <div class="producto">
+  <p>S/. 11.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Juane', 11.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
         </div>
         <div class="plato">
           <img src="imagenes/tacacho.jpg" alt="Tacacho con Cecina">
           <h3>Tacacho con Cecina</h3>
           <p class="descripcion-plato">Bolitas de plátano verde frito y machacado, acompañadas de cecina (carne de cerdo ahumada) y chorizo amazónico.</p>
+          <div class="producto">
+  <p>S/. 13.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Tacacho con Cecina', 13.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
         </div>
         <div class="plato">
           <img src="imagenes/patarashca.jpg" alt="Patarashca">
           <h3>Patarashca</h3>
           <p class="descripcion-plato">Pescado sazonado con hierbas aromáticas y envuelto en hojas de bijao, asado a la brasa. Sabor típico de la Amazonía.</p>
+
+<div class="producto">
+  <p>S/. 12.00</p>
+  <button class="boton-agregar" onclick="agregarAlCarrito('Patarashca', 12.0)">
+    Agregar al carrito 
+    <img src="imagenes/icono-carrito-negro.png" alt="🛒" style="width: 35px; height: 28px; vertical-align: middle; margin-left: 4px;">
+  </button>
+</div>
         </div>
       </div>
     </section>
@@ -157,5 +254,30 @@ La gastronomía amazónica peruana es una experiencia exótica y vibrante. Utili
       <p><a href="https://www.peru.travel" target="_blank">Visita Perú Travel</a></p>
     </div>
   </footer>
+  <!-- CARRITO DE COMPRAS -->
+ <div id="carrito" class="cerrado" onclick="alternarCarrito()">
+  <div id="carrito-header">
+    <img src="imagenes/icono-carrito.png" alt="Icono de carrito" width="70">
+    <p class="titulo-carrito">Tu carrito</p>
+  </div>
+  <!-- Contenido oculto por defecto -->
+  <div class="carrito-contenido">
+    <ul id="lista-carrito"></ul>
+    <p>Total: S/. <span id="total">0.00</span></p>
+    <button onclick="vaciarCarrito(); event.stopPropagation()">Vaciar</button>
+    <button onclick="finalizarCompra(); event.stopPropagation()">Finalizar compra</button>
+  </div>
+</div>
+
+<!-- POPUP DE MENSAJES -->
+<div id="popup" class="popup oculto">
+  <div class="popup-contenido">
+    <p id="popup-mensaje">Mensaje personalizado</p>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+</div>
+
+<script src="carrito.js"></script>
+
 </body>
 </html>

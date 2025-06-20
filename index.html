@@ -32,6 +32,9 @@
         <li><a href="gastronomia.html">Gastronomía</a></li>
         <li><a href="#tabla">Costos</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li class="icono-carrito-header">
+    <img src="imagenes/icono-carrito.png" alt="Carrito" id="iconoCarritoMenu" width="35">
+  </li>
       </ul>
     </nav>
   </div>
@@ -53,7 +56,7 @@
     </div>
   </div>
 </section>
-
+  
   <!-- Onda separadora entre Inicio y Lugares -->
 <div class="onda-separadora">
   <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
@@ -216,5 +219,29 @@
       <p><a href="https://www.peru.travel" target="_blank">Visita Perú Travel</a></p>
     </div>
   </footer>
+   <!-- CARRITO DE COMPRAS -->
+ <div id="carrito" class="cerrado" onclick="alternarCarrito()">
+  <div id="carrito-header">
+    <img src="imagenes/icono-carrito.png" alt="Icono de carrito" width="70">
+    <p class="titulo-carrito">Tu carrito</p>
+  </div>
+  <!-- Contenido oculto por defecto -->
+  <div class="carrito-contenido">
+    <ul id="lista-carrito"></ul>
+    <p>Total: S/. <span id="total">0.00</span></p>
+    <button onclick="vaciarCarrito(); event.stopPropagation()">Vaciar</button>
+    <button onclick="finalizarCompra(); event.stopPropagation()">Finalizar compra</button>
+  </div>
+</div>
+
+<!-- POPUP DE MENSAJES -->
+<div id="popup" class="popup oculto">
+  <div class="popup-contenido">
+    <p id="popup-mensaje">Mensaje personalizado</p>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+</div>
+
+<script src="carrito.js"></script>
 </body>
 </html>
