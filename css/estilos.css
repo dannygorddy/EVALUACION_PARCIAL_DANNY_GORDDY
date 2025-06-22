@@ -560,7 +560,6 @@ h2 {
   margin-bottom: -1px;
 }
 
-/* Estilo para popup */
 .popup {
   position: fixed;
   top: 0;
@@ -650,7 +649,6 @@ h2 {
 #carrito button:hover {
   background-color: #246b45;
 }
-/* Estado cerrado - estilo circular */
 #carrito.cerrado {
   width: 120px;
   height: 120px;
@@ -669,18 +667,16 @@ h2 {
   width: 60px;
 }
 
-/* Oculta el texto y título cuando está cerrado */
 #carrito.cerrado h3,
 #carrito.cerrado .carrito-contenido {
   display: none;
 }
 
-/* Estado abierto - estilo normal */
 #carrito.abierto {
   width: 350px;
   border-radius: 10px;
   padding: 15px;
-  max-height: 500px; /* NUEVO: altura máxima mayor */
+  max-height: 500px; 
 }
 .carrito-header {
   display: flex;
@@ -814,7 +810,7 @@ h2 {
 }
 .precio-tour {
   font-size: 1.2rem;
-  color: #2e7d32; /* Verde oscuro, evoca naturaleza */
+  color: #2e7d32; 
   font-weight: bold;
   margin-right: 10px;
   background-color: #eafae7;
@@ -843,6 +839,6 @@ h2 {
   color: #2e7d2f;
   font-size: 3rem;
   font-weight: bold;
-  margin: 0 auto 1rem auto; /* centrado horizontal */
-  display: block; /* asegúrate que no esté como inline */
+  margin: 0 auto 1rem auto; 
+  display: block; 
 }

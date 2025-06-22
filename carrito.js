@@ -143,8 +143,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (iconoMenu && carrito) {
     iconoMenu.addEventListener("click", (e) => {
-      e.stopPropagation(); // evita conflictos de eventos
-      alternarCarrito();   // abre o cierra como el ícono flotante
+      e.stopPropagation(); 
+      alternarCarrito();   
     });
   }
 });
